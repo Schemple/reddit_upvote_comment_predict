@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit Post Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='form.css') }}">
+</head>
+<body>
+    <div class="container">
+        </header>
+    
+        <header>
+            <h1>Reddit Post Prediction</h1>
+            <nav>
+                    <a href="/aboutus">About us</a>
+            </nav>
+        </header>
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label for="subscribers">Number of Subscribers:</label>
+                <input type="number" id="subscribers" name="subscribers" required>
+            </div>
+            <div class="form-group">
+                <label for="posting_time">Posting Time (YYYY-MM-DD HH:MM:SS):</label>
+                <input type="text" id="posting_time" name="posting_time" required>
+            </div>
+            <div class="form-group">
+                <label for="posting_title">Posting Title:</label>
+                <input type="text" id="posting_title" name="posting_title" required>
+            </div>
+            <div class="form-group">
+                <label for="posting_content">Posting Content:</label>
+                <textarea id="posting_content" name="posting_content" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="referenced_url">Referenced URL (optional):</label>
+                <input type="text" id="referenced_url" name="referenced_url">
+            </div>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+Dữ liệu có 26350 bản ghi, mỗi bản ghi có 238 cột:
+
+_id: ID của bản ghi
+num_comments: Số lượng bình luận (target)
+ups: Số lượng vote up hay số lượt thích (target)
+subcribers: Số lượng người theo dõi của chủ đề của bài đăng
+isMonday, isTuesday ... isFriday: 7 trường nhị phân thể hiện thứ trong tuần mà bài đăng được đăng
+isMorning, isAfternoon, isEvening, isNight: 4 trường nhị phân thể hiện khung giờ mà bài đăng được đăng: 0-6 giờ (night), 6-12 giờ (morning), 12-18 giờ (afternoon), 18-24 giờ (evening)
+selftext_length: độ dài bản ghi của nội dung bài đăng
+title_length: độ dài bản ghi của nội dung tiêu đề
+21 trường thông tin nhị phân liên quan đến bài đăng có kết nối đến trang thông tin nào khác không: 
+	Trong đó: 1 trường là noURL, tức là không có kết nối đến trang khác
+		  19 trường là các trang phổ biến nhất được kết nối (bbc, cnn, youtube...)
+		  1 trường là Other, kết nối đến trang khác nhưng không nằm trong các trang phổ biến
+200 trường là mô hình túi từ Bag-of-words của 200 từ xuất hiện nhiều nhất trong cả tiêu đề và nội dung

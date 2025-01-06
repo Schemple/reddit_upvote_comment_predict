@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Thiết lập chiều cao tối thiểu cho body bằng chiều cao của viewport */
+    display: flex;
+    flex-direction: column; /* Thiết lập layout theo chiều dọc */
+    background-color: #cbcbcb8f; /* Màu hồng */
+}
+
+header {
+    background-color: #ffffff; /* Màu xanh */
+    padding: 20px;
+    text-align: center;
+    color: #050404; /* Màu chữ trắng */
+}
+
+header nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav  a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid transparent; /* Đường viền mặc định */
+    transition: border-bottom-color 0.3s; /* Hiệu ứng chuyển đổi màu đường viền */
+}
+
+header nav a:hover {
+    border-bottom-color: #fff; /* Màu đường viền khi di chuột qua */
+}
+
+
+header nav  {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #0a0707;
+}
+.content {
+    flex: 1; /* Dãn content để chiếm phần còn lại của body */
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    flex-direction: column; /* Chuyển content thành layout dọc */
+    text-align: center;
+}
+
+.content {
+    flex: 1; /* Dãn content để chiếm phần còn lại của body */
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    width: 30%;
+    margin: 20px;
+    background-color: white;
+    width: 270px;
+    height: 135px;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    flex-shrink: 0; /* Không co rút footer khi content ít */
+}

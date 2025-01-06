@@ -1,0 +1,2 @@
+models/*.pkl 
+# ignoring models due to large size

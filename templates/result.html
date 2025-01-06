@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/result.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p>Predicted Vote-ups: {{ voteups }}</p>
+        <p>Predicted Comments: {{ comments }}</p>
+        <a href="/">Back to Form</a>
+    </div>
+</body>
+</html>
