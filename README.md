@@ -7,7 +7,7 @@ If you want to run the notebook without using the database, you may need to modi
 ### Run the Jupyter Notebook:
 First, open and run the file RedditDataBlogPrediction.ipynb.
 
-!Notice again that data is in database, you can crawl data by running crawldata.ipynb or write code to use CSV file.
+!Notice again that data is in database, you can crawl data by running crawldata.ipynb and preprocessing.ipynb or write code to use CSV file.
 ### Models:
 After running the notebook, the models will be saved in the models directory.
 ### Run the Application:
